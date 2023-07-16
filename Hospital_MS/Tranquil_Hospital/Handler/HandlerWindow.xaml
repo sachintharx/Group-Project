@@ -1,0 +1,149 @@
+﻿<Window x:Class="Hos_01.Handler.HandlerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hos_01.Handler"
+        mc:Ignorable="d"
+        Title="{Binding topic}" Height="800" Width="1400">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <!--<TabControl Width="1200">
+
+            <TabItem Width="300" HorizontalAlignment="Center" Header="Patient">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                    <Button Content="Add Patient" Command="{Binding AddPatientCommand}" Margin="10" Width="150"/>
+                    <Button Content="Update Patient" Command="{Binding DisplayPatientCommand }" Margin="10" Width="150"/>
+                    <Button Content="Display Patient" Command="{Binding DisplayPatientCommand}" Margin="10" Width="150"/>
+                    <Button Content="Delete Patient" Command="{Binding DisplayPatientCommand}" Margin="10" Width="150"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Left" Width="300" Header="User">
+                <StackPanel IsEnabled="{Binding IsAdmin}" HorizontalAlignment="Center" Orientation="Vertical">
+                    <Button Content="Add User" Command="{Binding AddUserCommand}" Margin="10" Width="150"/>
+                    <Button Content="Update User" Command="{Binding DisplayUserCommand}" Margin="10" Width="150"/>
+                    <Button Content="Display Users" Command="{Binding DisplayUserCommand}" Margin="10" Width="150"/>
+                    <Button Content="Delete User" Command="{Binding DisplayUserCommand }" Margin="10" Width="150"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Width="295" Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Right" Header="Doctor">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                    <Button Content="Add Doctor" Command="{Binding AddDoctorCommand}" Margin="10" Width="150"/>
+                    <Button Content="Update Doctor" Command="{Binding DisplayDoctorCommand }" Margin="10" Width="150"/>
+                    <Button Content="Display Doctor" Command="{Binding DisplayDoctorCommand }" Margin="10" Width="150"/>
+                    <Button Content="Delete Doctor" Command="{Binding DisplayDoctorCommand}" Margin="10" Width="150"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Width="295" Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Right" Header="Drugs">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                    <Button Content="Add Drugs" Command="{Binding AddDrugsCommand}" Margin="10" Width="150"/>
+                    <Button Content="Update Drugs" Command="{Binding DisplayDrugsCommand }" Margin="10" Width="150"/>
+                    <Button Content="Display Drugs" Command="{Binding DisplayDrugsCommand }" Margin="10" Width="150"/>
+                    <Button Content="Delete Drugs" Command="{Binding DisplayDrugsCommand}" Margin="10" Width="150"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>-->
+
+        <StackPanel Margin="32,5,100,292">
+            <Image Source="\images\01.png" Stretch="UniformToFill" Width="90" Margin="-1120,10,10,10" />
+            <TextBlock Margin="150,-80,0,0" Style="{StaticResource topic}">TRANQUIL CARE HOSPITAL</TextBlock>
+
+        </StackPanel>
+
+
+        <TabControl Width="1200" BorderThickness="0,0,0,0" Margin="0,150,0,0" >
+
+            <TabItem Width="300" HorizontalAlignment="Center" Header="Patient" Style="{StaticResource tabitem}">
+
+                <Grid >
+
+
+                    <Grid.ColumnDefinitions>
+                        
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="360*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Existing XAML code -->
+
+                    <StackPanel HorizontalAlignment="Center" Orientation="Vertical"   Margin="160,100,800,30">
+                        <Button Content="Add Patient" Command="{Binding AddPatientCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                        <Button Content="Update Patient" Command="{Binding DisplayPatientCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                        <Button Content="Display Patient" Command="{Binding DisplayPatientCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                        <Button Content="Delete Patient" Command="{Binding DisplayPatientCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Grid.ColumnSpan="2" >
+
+
+                        <!--<Grid Grid.Column="1" Margin="0,10,10,10">
+
+                            <Rectangle Height="350">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="White" Offset="0.5" />
+                                        <GradientStop Color="White" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+
+                            <StackPanel Style="{StaticResource patientbackground}">
+
+
+                            </StackPanel>
+
+                            <Image Source="\images\01.png" Stretch="UniformToFill" Width="90" Height="102" Margin="100"/>
+
+                        </Grid>-->
+
+
+
+
+                    </StackPanel>
+
+                </Grid>
+
+
+
+
+
+
+
+
+
+            </TabItem>
+            <TabItem Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Left" Width="300" Header="User" Style="{StaticResource tabitem}">
+                <StackPanel IsEnabled="{Binding IsAdmin}" HorizontalAlignment="Center" Orientation="Vertical" Margin="100,100,800,30">
+                    <Button Content="Add User" Command="{Binding AddUserCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Update User" Command="{Binding DisplayUserCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Display Users" Command="{Binding DisplayUserCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Delete User" Command="{Binding DisplayUserCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Width="295" Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Right" Header="Doctor" Style="{StaticResource tabitem}">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="100,100,800,30" >
+                    <Button Content="Add Doctor" Command="{Binding AddDoctorCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}" />
+                    <Button Content="Update Doctor" Command="{Binding DisplayDoctorCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Display Doctor" Command="{Binding DisplayDoctorCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Delete Doctor" Command="{Binding DisplayDoctorCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Width="295" Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Right" Header="Drugs" Style="{StaticResource tabitem}">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="100,100,800,30">
+                    <Button Content="Add Drugs" Command="{Binding AddDrugsCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Update Drugs" Command="{Binding DisplayDrugsCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Display Drugs" Command="{Binding DisplayDrugsCommand }" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                    <Button Content="Delete Drugs" Command="{Binding DisplayDrugsCommand}" Margin="10" Width="150" Style="{StaticResource curdbutton}"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

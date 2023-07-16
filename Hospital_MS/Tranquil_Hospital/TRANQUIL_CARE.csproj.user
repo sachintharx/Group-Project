@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ACurd\AddDoctor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ACurd\AddDrugg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ACurd\AddPatient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ACurd\AddUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ACurd\DisplayWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Handler\HandlerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ACurd\AddDoctor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ACurd\AddDrugg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ACurd\AddPatient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ACurd\AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ACurd\DisplayWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Handler\HandlerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

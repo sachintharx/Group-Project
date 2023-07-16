@@ -1,0 +1,27 @@
+﻿<Window x:Class="Hos_01.ACurd.AddDrugg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hos_01.ACurd"
+        mc:Ignorable="d"
+        Title="AddDrugg" Height="450" Width="500">
+   
+    <Grid>
+        <StackPanel>
+
+            <TextBlock Text=" Add Drugs" HorizontalAlignment="Center" Margin="10" FontSize="20" FontWeight="DemiBold" Foreground="PaleVioletRed"/>
+            <TextBlock Text="Reg No" Style="{StaticResource formtext}"/>
+            <TextBox  Text="{Binding RegNo}" BorderThickness=" 0 0 0 1" Style="{StaticResource forminput}" Margin="10"/>
+            <TextBlock Text="Name" Style="{StaticResource formtext}"/>
+            <TextBox Text="{Binding Name}" BorderThickness=" 0 0 0 1" Style="{StaticResource forminput}" Margin="10"/>                    
+            <TextBlock Text="Contity" Style="{StaticResource formtext}"/>
+            <TextBox  Text="{Binding Contity}" BorderThickness=" 0 0 0 1" Style="{StaticResource forminput}" Margin="10"/>
+            <TextBlock Text="Price" Style="{StaticResource formtext}" />
+            <TextBox  Text="{Binding Price}" BorderThickness=" 0 0 0 1" Style="{StaticResource forminput}" Margin="10"/>
+            
+            <Button Content="Save" Width="120" Margin="80"  Command="{Binding AddDrugsCommand  }" Style="{StaticResource curdbutton}" />
+            
+        </StackPanel>
+    </Grid>
+</Window>

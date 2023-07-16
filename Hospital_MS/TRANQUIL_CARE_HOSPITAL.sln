@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TRANQUIL_CARE", "Tranquil_Hospital\TRANQUIL_CARE.csproj", "{8E540406-B66C-414D-872B-A6B39BCC7ED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E540406-B66C-414D-872B-A6B39BCC7ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E540406-B66C-414D-872B-A6B39BCC7ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E540406-B66C-414D-872B-A6B39BCC7ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E540406-B66C-414D-872B-A6B39BCC7ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B278E32-3DEC-45A8-BFE9-D6B7D8032A44}
+	EndGlobalSection
+EndGlobal
